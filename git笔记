@@ -1,0 +1,21 @@
+1. -u: 对跟踪的文件进行全部添加，不需要 add xxx
+2. mv: 重命名，不会有删除和新建的步骤，之后可以直接commit
+3. git log --oneline: 简洁查看提交记录
+4. git log -n3 --oneline: 最近的3次
+
+5. git branch -v 查看分支
+6. git checkout -b xxxx 创建分支并切换到该分支
+6. git checkout -b xxxx yyyy //基于yyy分支创建xxxx分支并切换
+7. git commit -am 'xxxx' 工作区的直接提交
+8. git log -all --graph 图形化查看所有分支的记录
+9. git log --graph 分支名     //查看某个分支的记录，如果有--all参数，则以all参数为准
+10. gitk 图形化界面
+
+11. git cat-file -p commit号码  //查看本次提交的commit信息，如 tree, parent, author等
+12. git cat-file -t commit号码  //查看commit类型【commit, tree, blob 三个中的一个】
+13. git diff xxxx yyyy //比较这两个commit的差异
+14. git diff HEAD HEAD~2 // 当前和 父亲的父亲做比较
+
+15. git branch -d 分支名 //删除分支 -D 表示强制删除
+16. git commit --amend //对最近一次的commit comment 做变更
+17. git rebase -i commidID //如果要对这个commitID做 comment变更，则要选择这个提交的父提交，这是交互式操作，且只能修改未推送的commit
