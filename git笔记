@@ -1,0 +1,4 @@
+1. -u: 对跟踪的文件进行全部添加，不需要 add xxx
+2. mv: 重命名，不会有删除和新建的步骤，之后可以直接commit
+3. git log --oneline: 简洁查看提交记录
+4. git log -n3 --oneline: 最近的3次
