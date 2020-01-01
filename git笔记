@@ -3,7 +3,7 @@
 3. git log --oneline: 简洁查看提交记录
 4. git log -n3 --oneline: 最近的3次
 
-5. git branch -v 查看分支
+5. git branch -v 查看分支 av:全部，包括远程
 6. git checkout -b xxxx 创建分支并切换到该分支
 6. git checkout -b xxxx yyyy //基于yyy分支创建xxxx分支并切换
 7. git commit -am 'xxxx' 工作区的直接提交
@@ -14,8 +14,11 @@
 11. git cat-file -p commit号码  //查看本次提交的commit信息，如 tree, parent, author等
 12. git cat-file -t commit号码  //查看commit类型【commit, tree, blob 三个中的一个】
 13. git diff xxxx yyyy //比较这两个commit的差异
-14. git diff HEAD HEAD~2 // 当前和 父亲的父亲做比较
+14. git diff HEAD HEAD~2 // 当前和 父亲的父亲做比较,HEAD都是commit过的
 
 15. git branch -d 分支名 //删除分支 -D 表示强制删除
 16. git commit --amend //对最近一次的commit comment 做变更
 17. git rebase -i commidID //如果要对这个commitID做 comment变更，则要选择这个提交的父提交，这是交互式操作，且只能修改未推送的commit
+18. git diff --cached //暂存区和HEAD比较(暂存区和最近一次commmit的文件作比较)
+19. git diff //比较工作区和暂存区的所有区别
+29. git diff -- 文件名1 文件名2 文件名3 //指定1个或多个文件，比较工作区和暂存区的区别
