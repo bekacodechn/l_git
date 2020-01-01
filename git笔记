@@ -28,3 +28,18 @@
 31. 变更工作区的内容，用checkoiut, 变更暂存区的内容，用 reset
 32. git checkout -- filename   //工作区的内容恢复为暂存区的内容
 33. git reset --hard commidID //回到指定commit, 工作区和暂存区将和此commitID内容保持一致
+
+34. git diff 分支A 分支B [-- filename] //比较两个分支的全部区别，可指定文件
+35. git diff commidIDA commidIDB [-- filename] //可指定commitID作比较
+36. git rm filename //删除的文件放入暂存区
+
+37. git stash //贮藏。贮藏之后就不用提交分支也可以切换分支，回头再回来可把贮藏的代码拿出来继续开发
+38. git stash list // 查看贮藏
+39. git stash apply // 拿回贮藏的代码，贮藏记录不会消失
+30. git stash pop //拿回贮藏的代码，贮藏记录会消失
+
+40. git remote add 仓库名 ssh地址
+41. git remote -v
+42. git fetch remote 分支名
+43. git push 仓库名 分支名
+44. git checkout -b 本地分支 远程分支  //创建并切换分支，并且和远程分支产生关联，以后就可以直接 git push
