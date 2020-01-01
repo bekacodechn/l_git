@@ -20,5 +20,10 @@
 16. git commit --amend //对最近一次的commit comment 做变更
 17. git rebase -i commidID //如果要对这个commitID做 comment变更，则要选择这个提交的父提交，这是交互式操作，且只能修改未推送的commit
 18. git diff --cached //暂存区和HEAD比较(暂存区和最近一次commmit的文件作比较)
-19. git diff //比较工作区和暂存区的所有区别
-29. git diff -- 文件名1 文件名2 文件名3 //指定1个或多个文件，比较工作区和暂存区的区别
+19. git diff //比较工作区和HEAD的所有区别
+29. git diff -- 文件名1 文件名2 文件名3 //指定1个或多个文件，比较工作区和HEAD的区别
+
+30. git reset HEAD  filename1 // 从暂存区回到工作区
+30. git reset HEAD -- filename1 filename2 ... // 从暂存区回到工作区
+31. 变更工作区的内容，用checkoiut, 变更暂存区的内容，用 reset
+32. git checkout -- filename   //工作区的内容恢复为暂存区的内容
