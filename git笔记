@@ -27,3 +27,4 @@
 30. git reset HEAD -- filename1 filename2 ... // 从暂存区回到工作区
 31. 变更工作区的内容，用checkoiut, 变更暂存区的内容，用 reset
 32. git checkout -- filename   //工作区的内容恢复为暂存区的内容
+33. git reset --hard commidID //回到指定commit, 工作区和暂存区将和此commitID内容保持一致
