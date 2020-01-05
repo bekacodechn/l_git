@@ -43,4 +43,5 @@
 42. git fetch remote 分支名
 43. git push 仓库名 分支名
 44. git checkout -b 本地分支 远程分支  //创建并切换分支，并且和远程分支产生关联，以后就可以直接 git push
-45. git xxxxx
+
+45. git reset --hard 指定的commitID   // 恢复为指定的提交 , HEAD^表示恢复到倒数第二个提交(丢弃最新的提交)
